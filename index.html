@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name= "description" content= "Interactive Bookmark App to save all of the users favorite websites">
+  <title>Bookmark App</title>
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+  <link rel= "stylesheet" type= "text/css" href="main.css">
+</head>
+<body>
+  <main>
+      <h1>My Bookmarks</h1>
+      <form class="bookmarkMainForm">
+        <button type= submit class="createBookmarkForm">Create Bookmark</button>
+        <div class= "filterDiv">
+          <label for= "filterByRatingMenu" class= "filterLabel">Filter: </label>
+        </div>
+        <select class= "filterByRating" id="filterByRatingMenu"> 
+            <option selected value=0>Rating</option>
+            <option value=5>★★★★★</option>
+            <option value=4>★★★★☆</option> 
+            <option value=3>★★★☆☆</option> 
+            <option value=2>★★☆☆☆</option> 
+            <option value=1>★☆☆☆☆</option> 
+          </select>
+        
+      </form> 
+      <section class= "errorDisplay" aria-live= 'polite'>
+      </section>  
+      <section class="displayCreateBookmarkForm" aria-live='polite'>
+      </section>
+      <ul class= 'listOfBookmarks' aria-live='polite'>
+      </ul>
+  </main>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>  
+  <script type= "module" src= "index.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 100%;
+    background-image: url('https://images.saatchiart.com/saatchi/299445/art/3587886/additional_ef58eacd79e0f54b45b5a50954d63dbb42f58c0a-8.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Nanum Myeongjo', serif;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+.bookmarkMainForm{
+    border: 2px;
+    height: 100px;
+    width: 300px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+button{
+    margin-left: auto;
+    margin-right: auto;
+    height: 43px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.filterDiv{
+    margin: 10px;
+}
+.filterByRating{
+    margin:10px;
+}
+.bookmarkDetails{
+    height: 300px;
+    width: 600px;
+    border-radius: 15px;
+    background-color: white;
+    margin-top: 60px;
+    text-align: center;
+}
+li {
+    height: 300px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 35px;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titleAndRating{
+    margin:10px;
+}
+.titleAndRatingButton{
+    margin-top: 10px;
+    margin-left:30px;
+    height: 90px;
+    border: none;
+}
+.deleteBookmarkButton{
+    margin-left: auto;
+    margin-right: auto;
+}
+@media only screen and (max-width:500px){
+    body{
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+    }
+    .bookmarkMainForm{
+        margin-left: 25%;
+        margin-right: 30%;
+        margint-top: 20px;
+    }
+    button{
+        font-size: 15px;
+    }
+    li {
+        height: 300px;
+        width: 300px;
+        border-radius: 15px;
+        background-color: white;
+        margin-top: 10px;
+        margin-left: 0;
+        margin-right: 50px;
+        text-align: center;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .expandElementButton{
+        text-align: center;
+        margin-left: 14%;
+        margin-right: 25%;
+    }
+}
