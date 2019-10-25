@@ -66,11 +66,12 @@ button{
     text-align: center;
 }
 li {
-    height: 300px;
+    height: 100px;
     width: 300px;
     border-radius: 15px;
     background-color: white;
     margin-top: 10px;
+    margin-bottom: 100px;
     margin-left: 0;
     margin-right: 35px;
     text-align: center;
@@ -79,8 +80,36 @@ li {
     flex-direction: column;
     align-items: center;
 }
+.expandContent{
+   background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:4px;
+    width: 100%;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: -23px;
+    margin-bottom: 10px;
+}
+.expandContent p {
+    text-align: center;
+}
 .titleAndRating{
     margin:10px;
+    display: flex;
+    justify-content: space-between;
+    padding:12px;
+}
+.title{
+    margin-right:20px;
+}
+.titleAndRating:hover{
+background-color: rgb(236, 104, 27);
+color: white;
+}
+.hidden{
+    display:none;
 }
 .titleAndRatingButton{
     margin-top: 10px;

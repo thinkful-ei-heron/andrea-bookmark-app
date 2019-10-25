@@ -20,12 +20,12 @@ const createBookmarkHtml = function (item) {
         </div>
       </button>
     </form>
-    <div class= "js-expandContent ${item.expanded ? '' : 'hidden'}" aria-live='polite'>
+    <div class= "expandContent ${item.expanded ? '' : 'hidden'}" aria-live='polite'>
+      <p>${item.desc}</p>
       <form action= "${item.url}" target="_blank">
         <label for= "visitSite" class="hidden"></label>
         <input class= "visitSiteButton" type="submit" value="View Site" id= "visitSite"/>
       </form>
-      <p>${item.desc}</p>
       <form class= "js-DeleteButton">
         <button type= "submit" class="deleteBookmarkButton">Delete </button>
       </form>
